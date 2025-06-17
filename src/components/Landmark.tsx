@@ -83,7 +83,7 @@ import {
           </h2>
           <div className="flex flex-col lg:flex-row lg:mx-auto gap-12 lg:w-[80%] ">
             {/* Dark Card */}
-            <div className="bg-[#17262A] rounded-xl lg:w-full bg-[url('/mobile-pattern.png')] bg-[length:510px_510px] bg-repeat bg-center overflow-auto 2xl:max-h-[550px] xl:max-h-[500px]">
+            <div className="bg-[#17262A] rounded-xl lg:w-full bg-[url('/mobile-pattern.png')] bg-[length:100%_100%] bg-repeat bg-center 2xl:max-h-[550px] xl:max-h-[500px]">
               <div className="p-15">
                 <Accordion
                   type="single"

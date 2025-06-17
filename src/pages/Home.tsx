@@ -69,7 +69,7 @@ const Home = () => {
             Live Projects
           </h2>
           {/* Glassmorphism Card */}
-          <div className="border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15 2xl:py-12 2xl:px-40 xl:p-12 2xl:mx-58 xl:mx-24 rounded-3xl flex 2xl:gap-18 xl:gap-12">
+          <div className="border border-white/20 backdrop-blur-[50px] shadow-[0_16.54px_33.03px_rgba(0,0,0,0.1)] bg-white/15 2xl:p-12 xl:p-12 2xl:mx-58 xl:mx-24 rounded-3xl flex 2xl:gap-10 xl:gap-12">
             {/* Image */}
             <div className="flex flex-col justify-between gap-6 w-full">
               <img
@@ -90,8 +90,8 @@ const Home = () => {
               <div className="flex flex-col gap-4">
                 {/* RERA & Name */}
                 <div className="flex gap-10">
-                  <h2 className="text-3xl font-medium">ABC</h2>
-                  <h2 className="text-2xl">RERA No: XXXX XXXX XX</h2>
+                  <h2 className="text-3xl 2xl:text-2xl font-medium">ABC</h2>
+                  <h2 className="text-2xl 2xl:text-xl">RERA No: XXXX XXXX XX</h2>
                 </div>
                 {/* Specifications */}
                 <div className="flex items-center justify-between">
@@ -115,7 +115,7 @@ const Home = () => {
                     <img
                       src="icons/floorplan.png"
                       alt=""
-                      className="xl:w-1/7 2xl:w-1/4"
+                      className="xl:w-1/7 2xl:w-1/6"
                     />
                     <h2 className="text-xl">3960sqft</h2>
                   </div>
@@ -139,22 +139,22 @@ const Home = () => {
                 <div className="flex">
                   <div className="flex flex-col items-center justify-center gap-4 px-8 border-r">
                     <h2 className="text-sm">Floors</h2>
-                    <h2 className="text-3xl">12</h2>
+                    <h2 className="text-3xl 2xl:text-2xl">12</h2>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4 px-8 border-r">
                     <h2 className="text-sm">Units</h2>
-                    <h2 className="text-3xl">80</h2>
+                    <h2 className="text-3xl 2xl:text-2xl">80</h2>
                   </div>
                   <div className="flex flex-col items-center justify-center gap-4 px-8">
                     <h2 className="text-sm">Booked</h2>
-                    <h2 className="text-3xl">80</h2>
+                    <h2 className="text-3xl 2xl:text-2xl">80</h2>
                   </div>
                 </div>
               </div>
               {/* Buttons */}
               <div className="flex flex-col gap-3 text-black mt-auto">
                 <div className="flex gap-2">
-                  <button className="bg-white rounded-xl w-full flex items-center justify-center 2xl:py-3.5 xl:py-3 gap-2 font-medium">
+                  <button className="bg-white rounded-xl w-full flex items-center justify-center 2xl:py-3 xl:py-3 gap-2 font-medium">
                     <img
                       src="icons/google-maps.png"
                       alt="google-maps"
@@ -166,7 +166,7 @@ const Home = () => {
                     Download Brochure
                   </button>
                 </div>
-                <button className="bg-[#E64237] w-full 2xl:py-3.5 xl:py-3 rounded-full text-white">
+                <button className="bg-[#E64237] w-full 2xl:py-3 xl:py-3 rounded-full text-white">
                   Explore Now
                 </button>
               </div>
@@ -174,7 +174,7 @@ const Home = () => {
           </div>
         </div>
         {/* Completed Projects */}
-        <div className="bg-[url('/unico-pattern-black.png')] bg-cover bg-center bg-no-repeat h-full pt-42">
+        <div className="bg-[url('/unico-pattern-black.png')] bg-cover bg-center bg-no-repeat h-full pt-24 pb-16">
           <h2 className="text-center text-4xl text-white font-semibold">
             Completed Projects
           </h2>
@@ -313,8 +313,10 @@ const Home = () => {
       </div>
       
       {/* TODO: reviews Functional */}
-      <div>
-        <img src="/reviews.png" alt="" className="w-full"/>
+      <div className="bg-gradient-to-r from-[#24343B] to-[#0C1C20]">
+        <div className="bg-[url('/unico-pattern-black.png')] bg-cover bg-center bg-no-repeat 2xl:px-22">
+          <img src="/reviews.png" alt="" className="w-full"/>
+        </div>
       </div>
 
       <InstagramHighlights/>

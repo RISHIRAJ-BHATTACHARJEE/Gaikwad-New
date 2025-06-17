@@ -151,7 +151,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative z-10 w-[70vmin] h-[110vmin] md:h-[60vmin] md:scroll-none mx-auto"
+      className="relative z-10 w-[70vmin] h-[110vmin] md:h-[60vmin] 2xl:h-[50vmin] md:scroll-none mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
@@ -171,7 +171,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-center w-full -bottom-6 md:top-122 lg:top-102 2xl:top-110">
+      <div className="absolute flex justify-center w-full -bottom-6 md:top-122 lg:top-102 2xl:top-95">
         <CarouselControl
           type="previous"
           title="Go to previous slide"
