@@ -52,7 +52,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
     <div className="[perspective:2000px] [transform-style:preserve-3d]">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white transition-all duration-300 ease-in-out w-[250px] h-[385px] mx-[4vmin] md:mx-[9vmin] lg:mx-5 z-10"
+        className="flex flex-1 flex-col items-center justify-center relative text-center text-white transition-all duration-300 ease-in-out w-[260px] h-[385px] mx-[4vmin] md:mx-[9vmin] lg:mx-5 2xl:mx-0 z-10"
         onClick={() => handleSlideClick(index)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -66,7 +66,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 md:left-22 lg:left-46 w-full h-full md:w-[30vh] md:h-[50vh] 2xl:w-[28vh] 2xl:h-[45vh] rounded-sm overflow-hidden"
+          className="absolute top-0 left-0 md:left-22 lg:left-46 w-full h-full md:w-[30vh] md:h-[50vh] 2xl:w-[29vh] 2xl:h-[45vh] rounded-sm overflow-hidden"
           style={{
             backgroundImage: `url('/${card.image}')`,
             backgroundSize: "cover",
@@ -155,7 +155,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
-        className="absolute flex mx-[-4vmin] 2xl:-mx-2 transition-transform duration-1000 ease-in-out"
+        className="absolute flex mx-[-4vmin] 2xl:-mx-5 transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${current * (100 / slides.length)}%)`,
         }}
