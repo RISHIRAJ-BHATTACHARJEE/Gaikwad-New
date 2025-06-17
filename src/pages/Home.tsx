@@ -91,7 +91,9 @@ const Home = () => {
                 {/* RERA & Name */}
                 <div className="flex gap-10">
                   <h2 className="text-3xl 2xl:text-2xl font-medium">ABC</h2>
-                  <h2 className="text-2xl 2xl:text-xl">RERA No: XXXX XXXX XX</h2>
+                  <h2 className="text-2xl 2xl:text-xl">
+                    RERA No: XXXX XXXX XX
+                  </h2>
                 </div>
                 {/* Specifications */}
                 <div className="flex items-center justify-between">
@@ -265,9 +267,12 @@ const Home = () => {
         <div className="flex items-start justify-between w-full ">
           {/* Headings */}
           <div className="w-full flex flex-col gap-3 font-semibold">
-            <h2 className="text-[#24343B] 2xl:text-5xl xl:text-4xl">Check Out Our </h2>
             <h2 className="text-[#24343B] 2xl:text-5xl xl:text-4xl">
-              Top Class <span className="text-[#E64237] uppercase">Amenities</span>
+              Check Out Our{" "}
+            </h2>
+            <h2 className="text-[#24343B] 2xl:text-5xl xl:text-4xl">
+              Top Class{" "}
+              <span className="text-[#E64237] uppercase">Amenities</span>
             </h2>
           </div>
           {/* other Texts & Badges */}
@@ -281,52 +286,54 @@ const Home = () => {
             </p>
             {/* Badges */}
             <div className="flex items-center justify-start gap-6">
-                <div className="flex flex-col items-center justify-center">
-                    <h2>Years of experience</h2>
-                    <p className="text-3xl font-medium">7239</p>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                    <h2>States</h2>
-                    <p className="text-3xl font-medium">79+</p>
-                </div>
-                <div className="flex flex-col items-center justify-center">
-                    <h2>States</h2>
-                    <p className="text-3xl font-medium">79+</p>
-                </div>
+              <div className="flex flex-col items-center justify-center">
+                <h2>Years of experience</h2>
+                <p className="text-3xl font-medium">7239</p>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h2>States</h2>
+                <p className="text-3xl font-medium">79+</p>
+              </div>
+              <div className="flex flex-col items-center justify-center">
+                <h2>States</h2>
+                <p className="text-3xl font-medium">79+</p>
+              </div>
             </div>
           </div>
         </div>
         {/* Image */}
         <div className="w-full">
-            <img src="/component-2.png" alt="" className="w-full"/>
+          <img src="/component-2.png" alt="" className="w-full" />
         </div>
       </div>
 
       {/* TODO: About Us Functional */}
       <div>
-        <img src="/about-us-page.png" alt="" className="w-full"/>
+        <img src="/about-us-page.png" alt="" className="w-full" />
       </div>
 
       {/* TODO: meet the team Functional */}
-      <div>
-        <img src="/meet-the-team.png" alt="" className="w-full"/>
-      </div>
-      
-      {/* TODO: reviews Functional */}
-      <div className="bg-gradient-to-r from-[#24343B] to-[#0C1C20]">
-        <div className="bg-[url('/unico-pattern-black.png')] bg-cover bg-center bg-no-repeat 2xl:px-22">
-          <img src="/reviews.png" alt="" className="w-full"/>
+      <div className="bg-[#EBEAEA]">
+        <div className="bg-[url('/gaikwad-pattern-red-white.png')] bg-cover bg-center bg-no-repeat 2xl:px-24">
+          <img src="/meet-the-team.png" alt="" className="w-full" />
         </div>
       </div>
 
-      <InstagramHighlights/>
+      {/* TODO: reviews Functional */}
+      <div className="bg-gradient-to-r from-[#24343B] to-[#0C1C20]">
+        <div className="bg-[url('/unico-pattern-black.png')] bg-cover bg-center bg-no-repeat 2xl:px-24">
+          <img src="/reviews.png" alt="" className="w-full" />
+        </div>
+      </div>
+
+      <InstagramHighlights />
 
       {/* TODO: blogs Functional */}
       <div>
-        <img src="/blogs.png" alt="" className="w-full"/>
+        <img src="/blogs.png" alt="" className="w-full" />
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
