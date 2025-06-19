@@ -49,10 +49,10 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
   };
 
   return (
-    <div className="[perspective:2000px] [transform-style:preserve-3d]">
+    <div className="">
       <li
         ref={slideRef}
-        className="flex flex-1 flex-col items-center justify-center relative text-center text-white transition-all duration-300 ease-in-out w-[260px] h-[385px] mx-[4vmin] md:mx-[9vmin] lg:mx-5 2xl:mx-0 z-10"
+        className="flex flex-1 flex-col items-center justify-center relative text-center text-white transition-all duration-300 ease-in-out w-[250px] h-[385px] mx-[4vmin] sm:mx-2 md:mx-[1vmin] lg:mx-1 z-10"
         onClick={() => handleSlideClick(index)}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
@@ -66,7 +66,7 @@ const Slide = ({ card, index, current, handleSlideClick }: SlideProps) => {
         }}
       >
         <div
-          className="absolute top-0 left-0 md:left-22 lg:left-46 w-full h-full md:w-[30vh] md:h-[50vh] 2xl:w-[29vh] 2xl:h-[45vh] rounded-sm overflow-hidden"
+          className="absolute top-0 left-0 sm:left-26 md:left-22 lg:left-46 w-full h-full md:w-[30vh] md:h-[50vh] 2xl:w-[28vh] 2xl:h-[45vh] rounded-sm overflow-hidden"
           style={{
             backgroundImage: `url('/${card.image}')`,
             backgroundSize: "cover",
@@ -113,7 +113,7 @@ const CarouselControl = ({
 }: CarouselControlProps) => {
   return (
     <button
-      className={`w-14 h-14 md:w-24 md:h-24 2xl:w-18 2xl:h-18 flex items-center mx-2 justify-center border-3 border-transparent rounded-full focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
+      className={`w-14 h-14 md:w-18 md:h-18 2xl:w-18 2xl:h-18 flex items-center mx-2 justify-center border-3 border-transparent rounded-full focus:outline-none hover:-translate-y-0.5 active:translate-y-0.5 transition duration-200 ${
         type === "previous" ? "rotate-180" : ""
       }`}
       title={title}
@@ -151,11 +151,11 @@ export function InstagramCarousel({ slides }: CarouselProps) {
 
   return (
     <div
-      className="relative z-10 w-[70vmin] h-[110vmin] md:h-[60vmin] 2xl:h-[50vmin] md:scroll-none mx-auto"
+      className="relative z-10 w-[70vmin] h-[110vmin] sm:h-[67vmin] md:h-[60vmin] 2xl:h-[50vmin] md:scroll-none mx-auto"
       aria-labelledby={`carousel-heading-${id}`}
     >
       <ul
-        className="absolute flex mx-[-4vmin] 2xl:-mx-5 transition-transform duration-1000 ease-in-out"
+        className="absolute flex mx-[-4vmin] md:mx-12 lg:-mx-10 2xl:-mx-2 transition-transform duration-1000 ease-in-out"
         style={{
           transform: `translateX(-${current * (100 / slides.length)}%)`,
         }}
@@ -171,7 +171,7 @@ export function InstagramCarousel({ slides }: CarouselProps) {
         ))}
       </ul>
 
-      <div className="absolute flex justify-center w-full -bottom-6 md:top-122 lg:top-102 2xl:top-95">
+      <div className="absolute flex justify-center w-full -bottom-6 md:top-108 lg:top-106 2xl:top-100">
         <CarouselControl
           type="previous"
           title="Go to previous slide"
